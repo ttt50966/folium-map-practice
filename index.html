@@ -51,10 +51,10 @@
    <!-- Side navigation -->
 <div class="sidenav">
   <h2><font color="white">風險地圖</font></h2>
-  <h3><font color="white">選擇縣市</font></h3>
+  <h3><font color="white">選擇行政區域</font></h3>
   <div class="custom-select" style="width:300px;">
     <select name="map" id="map"ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
-      <option value="新北市_search.html">選擇縣市</option>
+      <option value="新北市_search.html">選擇行政區域</option>
       <option value="臺中市_search.html">臺中市</option>
       <option value="桃園市_search.html">桃園市</option>
       <option value="宜蘭縣_search.html">宜蘭縣</option>
@@ -78,6 +78,27 @@
       <option value="新竹市_search.html">新竹市</option>
 
      </select>
+  </div>
+  <div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <font color="white" size=2>
+    - 火災事件數：<br>按照行政區統計火災發生件數(藍綠色分佈)<br><br>
+    - 車禍發生地點：<br>熱點圖<br><br>
+    - 建築執照樓層分佈用途：<br>綠色房屋標記<br><br>
+  </font>
+  <hr>
+  </div>
+  <div>
+    <br>
+    <br>
+      <font color="white" size=2>
+        左側兩個搜尋欄：<br>
+        上方：搜尋建築執照<br>
+        下方：搜尋大略地址或地標
+      </font>
   </div>
   
 </div>
