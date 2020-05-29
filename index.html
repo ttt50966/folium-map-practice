@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+     /* The sidebar menu */
+    .sidenav {
+      height: 100%; /* Full-height: remove this if you want "auto" height */
+      width: 160px; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 20px;
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Style page content */
+    .main {
+      margin-left: 160px; /* Same as the width of the sidebar */
+      padding: 0px 10px;
+
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    } 
+
+  </style>
+  
+</head>
+
+<body>
+  
+   <!-- Side navigation -->
+<div class="sidenav">
+  <h2><font color="white">風險地圖</font></h2>
+  <h3><font color="white">選擇縣市</font></h3>
+  <div class="custom-select" style="width:300px;">
+    <select name="map" id="map"ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+      <option value="新北市_search.html">選擇縣市</option>
+      <option value="臺中市_search.html">臺中市</option>
+      <option value="桃園市_search.html">桃園市</option>
+      <option value="宜蘭縣_search.html">宜蘭縣</option>
+      <option value="澎湖縣_search.html">澎湖縣</option>
+      <option value="雲林縣_search.html">雲林縣</option>
+      <option value="連江縣_search.html">連江縣</option>
+      <option value="臺南市_search.html">臺南市</option>
+      <option value="新北市_search.html">新北市</option>
+      <option value="屏東縣_search.html">屏東縣</option>
+      <option value="嘉義縣_search.html">嘉義縣</option>
+      <option value="臺東縣_search.html">臺東縣</option>
+      <option value="苗栗縣_search.html">苗栗縣</option>
+      <option value="嘉義市_search.html">嘉義市</option>
+      <option value="彰化縣_search.html">彰化縣</option>
+      <option value="高雄市_search.html">高雄市</option>
+      <option value="金門縣_search.html">金門縣</option>
+      <option value="南投縣_search.html">南投縣</option>
+      <option value="基隆市_search.html">基隆市</option>
+      <option value="花蓮縣_search.html">花蓮縣</option>
+      <option value="新竹縣_search.html">新竹縣</option>
+      <option value="新竹市_search.html">新竹市</option>
+
+     </select>
+  </div>
+  
+</div>
+
+<!-- Page content -->
+<div class="main">
+  <iframe frameborder="0" scrolling="no" width=100% height=700px name="iframe" id="youriframe" src="新北市_search.html"></iframe>
+</div> 
+  
+
+  
+
+
+</body>
+</html>
